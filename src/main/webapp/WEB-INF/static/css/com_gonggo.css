@@ -1,0 +1,235 @@
+header {
+    width: 100%;
+}
+section {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    clear: both;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+ul {
+    padding: 0px;
+}
+li {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.page-section {
+	margin-top : 150px;
+}
+
+/***怨듯넻�곸뿭***/
+.container {
+    width: 80%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.align-items-center {
+    align-items: center;
+}
+.list-row {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.list-column {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+/***header***/
+.nav-item {
+    color: #495057;
+    padding-left: 3px;
+}
+.main-logo {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.logo-img {
+    width: 30%;
+    padding:0 0 0 0;
+}
+.head-tab {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+.join-tab {
+    width: 100%;
+    text-align: right;
+}
+.join-button {
+    color: gray;
+}
+
+/*** 而⑦뀗痢�/section ***/
+/*** width,display�� 留뚯�吏� 留먭린***/
+/*** height�� background-color�� �꾩쓽濡� �ｌ�嫄곕씪 吏��곌퀬 �곗떆硫� �⑸땲��***/
+.category {
+    width: 100%;
+}
+.category_1st {
+    width: 19.5%;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+/*怨듦퀬 �섏씠吏� css*/
+.gonggo_top {
+    width: 100%;
+}
+.gonggo_top_1 {
+    width: 45%;
+    height: 200px;
+    margin-top: 7%;
+    margin-left: 2%;
+    display: inline-block;
+}
+.gonggo_top_2 {
+    width: 48%;
+    margin-top: 3%;
+    margin-right: 5%;
+    height: 200px;
+    float:right;
+}
+/*.company_image {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    height: 300px;
+    text-align: center;
+}
+.company_img {
+    width:70%;
+    padding-top: 30px;
+
+}*/
+.circle_info {
+    width: 100%;
+    display: inline-block;
+    height: 200px;
+}
+.info_wrap {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    float: left;
+}
+.circle_image {
+    width:50%;
+    padding-top: 50px;
+}
+.gonggo_middle {
+    width: 100%;
+}
+.left_layer {
+    width: 59%;
+    display: inline-block;
+    float: left;
+    height: 500px;
+    border-right:1px solid #060707;
+}
+.gonggo_detail {
+    width:100%;
+    text-align:left;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.gonggo_detail_title {
+    margin-left: 1%;
+}
+table {
+    border-spacing: 10px;
+}
+.right_layer {
+    width: 40%;
+    display: inline-block;
+    height: 500px;
+}
+.buttons {
+    margin-top: 10%;
+    margin-left: 33%;
+}
+.apply_button {
+    background-color: #14adc5;
+    border: 1px solid #14adc5;
+    margin-bottom: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 150px;
+    display: block;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+/* .contact_button {
+    background-color: white;
+    border: 3px solid #14adc5;
+    margin-bottom: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 150px;
+    display: block;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color:#14adc5;
+} */
+.calc_button {
+   background-color: white;
+    border: 3px solid #14adc5;
+    margin-bottom: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 150px;
+    display: block;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color:#14adc5;
+}
+.manager-info {
+    padding: 10px;
+    margin-left:10%;
+}
+.gonggo_bottom {
+    width:100%;
+    margin-left: 3%;
+}
+.login_default_img3 {
+    width:40%;
+}
+.main_content2_table3_td1 {
+    width: 90px;
+    border-collapse: collapse;
+}
+/***footer***/
+.footer_wrap {
+    width: 100%;
+}
+.footer_section {
+    width: 10%;
+}
+.footer_img {
+    width: 100%;
+}

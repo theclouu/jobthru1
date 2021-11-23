@@ -1,0 +1,414 @@
+header {
+    width: 100%;
+}
+section {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    clear: both;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+ul {
+    padding: 0px;
+}
+li {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/***공통영역***/
+.container {
+    width: 80%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.align-items-center {
+    align-items: center;
+}
+.list-row {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.list-column {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.list-column1 {
+    width: 40%;
+    padding: 0;
+}
+.list-column2 {
+    width: 60%;
+    padding: 5% 0 0 0;
+    text-align: left;
+}
+/***header***/
+.nav-item {
+    color: #495057;
+    padding-left: 3px;
+}
+.main-logo {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.logo-img {
+    width: 30%;
+    padding:0 0 0 0;
+}
+.head-tab {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+.join-tab {
+    width: 100%;
+    text-align: right;
+}
+.join-button {
+    color: gray;
+}
+
+/*** 컨텐츠/section ***/
+/*** width,display는 만지지 말기***/
+/*** height랑 background-color는 임의로 넣은거라 지우고 쓰시면 됩니당***/
+.left_menu {
+    width: 18%;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    height: 1100px;
+    /* background-color: lightcoral; */
+}
+.main_content {
+    width: 60%;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    height: 1100px;
+    /* background-color: lightskyblue; */
+}
+.aside {
+    width: 18%;
+    display: inline-block;
+    height: 1100px;
+    /* background-color: lemonchiffon; */
+}
+
+/***footer***/
+.footer_wrap {
+    width: 100%;
+}
+.footer_section {
+    width: 10%;
+}
+.footer_img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** 여기서부터 아래로 새로 만든 css ***/
+
+.login_default_img1 {
+    width: 40%;
+    padding:5% 0 0 0;
+    margin:0;
+}
+.left_menu_center_item {
+    width: 80%;
+    padding:0;
+    margin: 10%;
+}
+.left_menu_center_item2 {
+    width: 80%;
+    padding:5% 0 5% 0;
+    margin: 10%;
+    background-color: rgba(230, 230, 230, 0.473);
+    border-radius: 20px;
+}
+.login_default_img2 {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    padding-top: 10px;
+}
+.login_id {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin: auto;
+}
+.left_menu_p1 {
+    text-align: center;
+    font-size: 0.8em;
+}
+.left_menu_p2 {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0 0 5% 0;
+}
+.chat_go_img {
+    display: block;
+    padding: 5% 0 10% 0;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_resume_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_proposal_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_application_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.smart_match_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_elec_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_review_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_mypage1_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.main_content_center_item_card_list1 {
+    width: 80%;
+    padding:0;
+    margin: 2% 10% 2% 10%;
+}
+.main_content_ul {
+    list-style: none;
+}
+#count_resume1{
+    display: inline-block;
+    width: 15%;
+    padding:0;
+    margin: 5% 5% 5% 10%;
+}
+#count_resume2{
+    display: inline-block;
+    width: 15%;
+    padding:0;
+    margin: 5%;
+}
+#count_resume3{
+    display: inline-block;
+    width: 15%;
+    padding:0;
+    margin: 5%;
+}
+.count_resume_p1 {
+    text-align: center;
+    color: white;
+    background-color: #14adc5;
+    width: 60%;
+    padding: 20% 0 20% 0;
+    margin: 0 0 5% 20%;
+    border-radius: 10px;
+}
+.count_resume_p2 {
+    text-align: center;
+    font-size: 0.8em;
+    padding:0;
+    margin:0;
+}
+.main_content_sub {
+    width: 80%;
+    padding: 0 10% 0 0;
+    margin: auto;
+}
+.main_content_subtitle1 {
+    text-align: left;
+    font-size: 1.4em;
+    text-decoration: underline;
+    padding:0 0 0 0;
+    margin:0;
+}
+.main_content_center_item {
+    width: 80%;
+    padding:0;
+    margin: 5%;
+}
+.main_content_center_item2 {
+    width: 80%;
+    padding:5%;
+    margin: 5%;
+    background-color: rgba(230, 230, 230, 0.473);
+    border-radius: 10px;
+}
+#main_content_table1 {
+    width: 100%;
+}
+#main_content_table1_th1 {
+    width: 70%;
+}
+#main_content_table1_th2 {
+    width: 30%;
+}
+.go_chat2_img {
+    display: block;
+    margin: 0px auto;
+    width: 60%;
+}
+#main_content_table2 {
+    width: 100%;
+    padding: 0 60% 0 0;
+}
+.main_content_table2_td1 {
+    width: 30%;
+}
+.category_cleaning_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.main_content_subtitle2 {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding:0;
+    margin:0;
+}
+.main_content_center_item_card_list2 {
+    width: 90%;
+    padding:0;
+    margin: 2%;
+}
+.people{
+    display: inline-block;
+    width: 32%;
+    padding:0;
+    margin: auto;
+}
+.people_img {
+    width: 90%;
+    margin: 10% 10% 2% 10%;
+}
+.people_p1 {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding:0;
+    margin:0;
+}
+.people_p2 {
+    text-align: center;
+    font-size: 0.8em;
+    padding:0;
+    margin:0;
+}
+.aside_center_item {
+    width: 100%;
+    padding:0;
+    margin: 0;
+}
+.aside_center_item2 {
+    width: 100%;
+    padding:0 0 1% 0;
+    margin: 0;
+    background-color: rgba(230, 230, 230, 0.473);
+    border-radius: 20px;
+}
+.information_subtitle1 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: blue;
+    margin: 40% 0 20% 0;
+}
+.information{
+    display: block;
+    width: 70%;
+    padding:7.5% 7.5% 3% 7.5%;
+    margin: 10% 7.5% 10% 7.5%;
+    background-color: white;
+    border-radius: 20px;
+}
+.information_img {
+    display: block;
+    width: 40%;
+    margin: 0px auto;
+}
+.aside_ul {
+    list-style: none;
+}
+.information_p1 {
+    text-align: center;
+    font-size: 0.8em;
+    padding:0;
+    margin:5%;
+}
+.information_p2 {
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(120, 120, 120, 0.473);
+    padding:0 0 10% 0;
+    margin:0;
+}
+.information_subtitle2 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin: 20% 0 20% 0;
+}
+.information_subtitle3 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: blue;
+    margin: 20% 0 10% 0;
+}
+.information_subtitle4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: blue;
+    margin: 10% 0 10% 0;
+    padding : 10% 0 0 0;
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+   <definition name="baseLayout"  template="/WEB-INF/views/common/layout.jsp">
+      <put-attribute name="title" value="" />
+      <put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+      <put-attribute name="body" value="" />
+      <put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+   </definition>
+
+   <definition name="main" extends="baseLayout">
+      <put-attribute name="title" value="메인페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/main.jsp" />
+   </definition>
+
+
+   <definition name="/member/listMembers" extends="baseLayout">
+      <put-attribute name="title" value="회원목록창" />
+      <put-attribute name="body" value="/WEB-INF/views/member/listMembers.jsp" />
+   </definition>
+   
+
+    
+   <definition name="/member/loginForm" extends="baseLayout">
+      <put-attribute name="title" value="로그인창" />
+      <put-attribute name="body" value="/WEB-INF/views/member/loginForm.jsp" />
+   </definition>
+ <!-- 회원가입  -->
+   <definition name="/person/member_Select" extends="baseLayout">
+      <put-attribute name="title" value="회원가입" />
+      <put-attribute name="body" value="/WEB-INF/views/person/member_Select.jsp" />
+   </definition>
+   <definition name="/person/member_Join" extends="baseLayout">
+      <put-attribute name="title" value="개인 회원가입" />
+      <put-attribute name="body" value="/WEB-INF/views/person/member_Join.jsp" />
+   </definition>   
+   <definition name="/job/job_search" extends="baseLayout">
+      <put-attribute name="title" value="나의 일자리 찾기" />
+      <put-attribute name="body" value="/WEB-INF/views/job/job_search.jsp" />
+   </definition>
+   <definition name="/company/com_gonggo" extends="baseLayout">
+      <put-attribute name="title" value="기업 공고페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/company/com_gonggo.jsp" />
+   </definition>
+   <definition name="/company/com_infoPage" extends="baseLayout">
+      <put-attribute name="title" value="기업 정보 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/company/com_infoPage.jsp" />
+   </definition>
+   <definition name="/job/calculator" extends="baseLayout">
+      <put-attribute name="title" value="급여계산기" />
+      <put-attribute name="body" value="/WEB-INF/views/job/calculator.jsp" />
+   </definition>
+   <definition name="/job/info1" extends="baseLayout">
+      <put-attribute name="title" value="최저 시급 정보글" />
+      <put-attribute name="body" value="/WEB-INF/views/job/info1.jsp" />
+   </definition>
+   <definition name="/job/info2" extends="baseLayout">
+      <put-attribute name="title" value="전자 근로 계약서 정보성글" />
+      <put-attribute name="body" value="/WEB-INF/views/job/info2.jsp" />
+   </definition>
+   <definition name="/job/info3" extends="baseLayout">
+      <put-attribute name="title" value="취업사기 정보성글" />
+      <put-attribute name="body" value="/WEB-INF/views/job/info3.jsp" />
+   </definition>
+ <definition name="/company/com_reviewDetailPage" extends="baseLayout">
+      <put-attribute name="title" value="기업 리뷰" />
+      <put-attribute name="body" value="/WEB-INF/views/company/com_reviewDetailPage.jsp" />
+   </definition>
+	<definition name="/company/com_main" extends="baseLayout">
+      <put-attribute name="title" value="기업 메인 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/company/com_main.jsp" />
+   </definition> 
+	<definition name="/person/member_infoPage" extends="baseLayout">
+      <put-attribute name="title" value="개인 정보 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/person/member_infoPage.jsp" />
+   </definition>
+	<definition name="/person/member_reviewDetailPage" extends="baseLayout">
+      <put-attribute name="title" value="개인 리뷰 상세페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/person/member_reviewDetailPage.jsp" />
+   </definition>   
+	<definition name="/person/member_reviewPage" extends="baseLayout">
+      <put-attribute name="title" value="개인 리뷰 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/person/member_reviewPage.jsp" />
+   </definition>    
+	<definition name="/person/member_myPage" extends="baseLayout">
+      <put-attribute name="title" value="개인 마이 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/person/member_myPage.jsp" />
+   </definition>         
+   	<definition name="/company/com_statusRegister" extends="baseLayout">
+      <put-attribute name="title" value="지원 목록" />
+      <put-attribute name="body" value="/WEB-INF/views/company/com_statusRegister.jsp" />
+   </definition>    
+   <definition name="/person/member_jjim" extends="baseLayout">
+      <put-attribute name="title" value="찜 목록" />
+      <put-attribute name="body" value="/WEB-INF/views/person/member_jjim.jsp" />
+   </definition>     
+   <definition name="/company/com_comTract" extends="baseLayout">
+      <put-attribute name="title" value="전자 근로 계약서 보기" />
+      <put-attribute name="body" value="/WEB-INF/views/company/com_comTract.jsp" />
+   </definition>    
+   <definition name="/company/com_myPage" extends="baseLayout">
+      <put-attribute name="title" value="기업 마이페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/company/com_myPage.jsp" />
+   </definition> 
+   <definition name="/person/member_statusRegister" extends="baseLayout">
+      <put-attribute name="title" value="지원목록" />
+      <put-attribute name="body" value="/WEB-INF/views/person/member_statusRegister.jsp" />
+   </definition> 
+   <definition name="/person/member_statusRegister_for_review" extends="baseLayout">
+      <put-attribute name="title" value="지원자 리뷰작성 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/person/member_statusRegister_for_review.jsp" />
+   </definition> 
+   <definition name="/job/ad" extends="baseLayout">
+      <put-attribute name="title" value="광고소개" />
+      <put-attribute name="body" value="/WEB-INF/views/job/ad.jsp" />
+   </definition>
+      <definition name="/company/com_gonggoRegister" extends="baseLayout">
+      <put-attribute name="title" value="공고 등록" />
+      <put-attribute name="body" value="/WEB-INF/views/company/com_gonggoRegister.jsp" />
+   </definition>
+  <definition name="/job/job_listDetailPage" extends="baseLayout">
+      <put-attribute name="title" value="직종별 세부 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/job/job_listDetailPage.jsp" />
+   </definition>
+  <definition name="/job/job_listPage" extends="baseLayout">
+      <put-attribute name="title" value="직종별 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/job/job_listPage.jsp" />
+   </definition>
+   <definition name="/job/job_listSudoPage" extends="baseLayout">
+      <put-attribute name="title" value="지역별 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/job/job_listSudoPage.jsp" />
+   </definition>
+   <definition name="/company/com_reviewPage" extends="baseLayout">
+      <put-attribute name="title" value="기업 리뷰 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/company/com_reviewPage.jsp" />
+   </definition>
+   <definition name="/job/update_Review" extends="baseLayout">
+      <put-attribute name="title" value="리뷰 수정" />
+      <put-attribute name="body" value="/WEB-INF/views/job/update_Review.jsp" />
+   </definition>
+   
+   <definition name="login" extends="baseLayout">
+      <put-attribute name="title" value="로그인" />
+      <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+   </definition> 
+      <definition name="/job/review_starPoint" extends="baseLayout">
+      <put-attribute name="title" value="리뷰 작성" />
+      <put-attribute name="body" value="/WEB-INF/views/job/review_starPoint.jsp" />
+   </definition> 
+   
+   <!--  유정 검색 결과 페이지 타일즈 -->
+   <definition name="/job/job_comment" extends="baseLayout">
+      <put-attribute name="title" value="검색 결과 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/job/job_comment.jsp" />
+   </definition>
+   
+   <!-- 퀵서비스 페이지 타일즈 -->
+   <definition name="/job/job_listquickPage" extends="baseLayout">
+      <put-attribute name="title" value="퀵서비스 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/job/job_listquickPage.jsp" />
+   </definition>
+
+<!-- 
+   <definition name="/member/memberForm" extends="baseLayout">
+      <put-attribute name="title" value="회원등록창" />
+      <put-attribute name="body" value="/WEB-INF/views/member/memberForm.jsp" />
+   </definition>
+
+   <definition name="/member/viewDetail" extends="baseLayout">
+      <put-attribute name="title" value="회원상세창" />
+      <put-attribute name="body" value="/WEB-INF/views/member/viewDetail.jsp" />
+   </definition> -->
+</tiles-definitions>

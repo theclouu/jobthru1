@@ -1,0 +1,134 @@
+header {
+    width: 100%;
+}
+section {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    clear: both;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+ul {
+    padding: 0px;
+}
+li {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/***공통영역***/
+.container {
+    width: 80%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.align-items-center {
+    align-items: center;
+}
+.list-row {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.list-column {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+/***header***/
+.nav-item {
+    color: #495057;
+    padding-left: 3px;
+}
+.main-logo {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.logo-img {
+    width: 30%;
+    padding:0 0 0 0;
+}
+.head-tab {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+.join-tab {
+    width: 100%;
+    text-align: right;
+}
+.join-button {
+    color: gray;
+}
+
+/*** 컨텐츠/section ***/
+/*** width,display는 만지지 말기***/
+/*** height랑 background-color는 임의로 넣은거라 지우고 쓰시면 됩니당***/
+
+.main_content {
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 100%;
+    display: inline-block;
+    height: 700px;
+
+}
+.main_content .accordion {
+        position:absolute;
+        top:40%;
+        left:50%;
+        bottom:20%;
+        transform:translateX(-50%);
+        width:1200px;
+}
+
+.main_content input[id*="answer"] {
+	display:none;
+}
+.main_content input[id*="answer"] + label {
+	display:block;
+    padding:37px;
+	border-left: 2px solid #14ADC5;
+	font-weight:1000;
+	background:#fff;
+	cursor:pointer;
+	position:relative;
+	color:#4B4B4B;
+}
+.main_content input[id*="answer"] + label em {
+	position:absolute;
+	top:50%;
+	right:10px;
+	width:60px;
+    height:30px;margin-top:-15px;
+    display:inline-block;
+    background:url('/assets/arrow.png') 0 0 no-repeat;}
+
+.main_content input[id*="answer"] + label + div {max-height:0;transition: all .35s; overflow:hidden; background:#ebf8ff;font-size:11px; color:#333333;}
+.main_content input[id*="answer"] + label + div p {display:inline-block;padding:27px;line-height: 200%; font-size: 14px; }
+.main_content input[id*="answer"]:checked + label + div {max-height:200px;}
+.main_content input[id*="answer"]:checked + label em {background-position:0 -30px;}
+
+/***footer***/
+.footer_wrap {
+    width: 100%;
+}
+.footer_section {
+    width: 10%;
+}
+.footer_img {
+    width: 100%;
+}
+
+

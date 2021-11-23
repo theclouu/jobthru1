@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.member">
+   <resultMap id="memResult" type="memberVO">
+      <result property="member_id" column="member_id" />
+        <result property="member_password" column="member_password" />
+        <result property="member_name" column="member_name" />
+        <result property="member_email" column="member_email" />
+        <result property="member_profileImage" column="member_profileImage" />
+        <result property="type" column="type"/>
+        <result property="com_apply_ID" column="com_apply_ID" />
+        <result property="com_apply_category" column="com_apply_category" />
+        <result property="com_apply_career" column="com_apply_career" />
+        <result property="com_apply_gender" column="com_apply_gender" />
+        <result property="com_apply_age" column="com_apply_age" />
+        <result property="com_apply_age2" column="com_apply_age2" />
+        <result property="com_apply_number" column="com_apply_number" />
+        <result property="com_apply_day" column="com_apply_day" />
+        <result property="com_apply_region1" column="com_apply_region1" />
+        <result property="com_apply_region2" column="com_apply_region2" />
+        <result property="com_apply_region3" column="com_apply_region3" />
+        <result property="com_apply_pay_day" column="com_apply_pay_day" />
+        <result property="com_apply_deadline" column="com_apply_deadline" />
+        <result property="com_apply_paper" column="com_apply_paper" />
+        <result property="com_apply_image" column="com_apply_image" />
+        <result property="com_apply_license_name" column="com_apply_license_name" />
+        <result property="com_apply_intro" column="com_apply_intro" />
+        <result property="registration_date" column="registration_date" />
+        <result property="com_apply_category" column="com_apply_category" />
+      
+   </resultMap> 
+	 <!-- 은빈 찜목록 -->
+	 <resultMap id="member_jjimResult" type="ComEunVO">
+       <result property="com_apply_ID" column="com_apply_ID" />
+        <result property="member_id" column="member_id" />
+        <result property="com_apply_category" column="com_apply_category" />
+        <result property="com_apply_career" column="com_apply_career" />
+        <result property="com_apply_gender" column="com_apply_gender" />
+        <result property="com_apply_age" column="com_apply_age" />
+        <result property="com_apply_age2" column="com_apply_age2" />
+        <result property="com_apply_number" column="com_apply_number" />
+        <result property="com_apply_day" column="com_apply_day" />
+        <result property="com_apply_region1" column="com_apply_region1" />
+        <result property="com_apply_region2" column="com_apply_region2" />
+        <result property="com_apply_region3" column="com_apply_region3" />
+        <result property="com_apply_pay_day" column="com_apply_pay_day" />
+        <result property="com_apply_deadline" column="com_apply_deadline" />
+        <result property="com_apply_paper" column="com_apply_paper" />
+        <result property="com_apply_image" column="com_apply_image" />
+        <result property="com_apply_license_name" column="com_apply_license_name" />
+        <result property="com_apply_intro" column="com_apply_intro" />
+        <result property="com_apply_category" column="com_apply_category" />
+        <result property="registration_date" column="registration_date" />
+        <result property="member_name" column="member_name" />
+        <result property="member_profileImage" column="member_profileImage" />   
+       </resultMap>
+       
+       <!-- 아람 -->
+     <resultMap id="job_listResult" type="job_listVO">
+		<result property="com_apply_ID" column="com_apply_ID" />
+        <result property="member_id" column="member_id" />
+        <result property="com_apply_category" column="com_apply_category" />
+        <result property="com_apply_career" column="com_apply_career" />
+        <result property="com_apply_gender" column="com_apply_gender" />
+        <result property="com_apply_age" column="com_apply_age" />
+        <result property="com_apply_age2" column="com_apply_age2" />
+        <result property="com_apply_number" column="com_apply_number" />
+        <result property="com_apply_day" column="com_apply_day" />
+        <result property="com_apply_region1" column="com_apply_region1" />
+        <result property="com_apply_region2" column="com_apply_region2" />
+        <result property="com_apply_region3" column="com_apply_region3" />
+        <result property="com_apply_pay_day" column="com_apply_pay_day" />
+        <result property="com_apply_deadline" column="com_apply_deadline" />
+        <result property="com_apply_paper" column="com_apply_paper" />
+        <result property="com_apply_image" column="com_apply_image" />
+        <result property="com_apply_license_name" column="com_apply_license_name" />
+        <result property="com_apply_intro" column="com_apply_intro" />
+        <result property="registration_date" column="registration_date" />
+        <result property="member_name" column="member_name" />
+        <result property="member_profileImage" column="member_profileImage" />
+	</resultMap> 
+		
+	<resultMap id="selectArticle" type="companyVO">
+		<result property="com_apply_ID" column="com_apply_ID" />
+        <result property="member_id" column="member_id" />
+        <result property="com_apply_category" column="com_apply_category" />
+        <result property="com_apply_career" column="com_apply_career" />
+        <result property="com_apply_gender" column="com_apply_gender" />
+        <result property="com_apply_age" column="com_apply_age" />
+        <result property="com_apply_age2" column="com_apply_age2" />
+        <result property="com_apply_number" column="com_apply_number" />
+        <result property="com_apply_day" column="com_apply_day" />
+        <result property="com_apply_region1" column="com_apply_region1" />
+        <result property="com_apply_region2" column="com_apply_region2" />
+        <result property="com_apply_region3" column="com_apply_region3" />
+        <result property="com_apply_pay_day" column="com_apply_pay_day" />
+        <result property="com_apply_deadline" column="com_apply_deadline" />
+        <result property="com_apply_paper" column="com_apply_paper" />
+        <result property="com_apply_image" column="com_apply_image" />
+        <result property="com_apply_license_name" column="com_apply_license_name" />
+        <result property="com_apply_intro" column="com_apply_intro" />
+        <result property="registration_date" column="registration_date" />
+        <result property="member_name" column="member_name" />
+        <result property="member_profileImage" column="member_profileImage" />
+	</resultMap>
+	
+	<resultMap id="myMatching" type="myMatchingVO">
+	    <result property="matching_id" column="matching_id" />
+        <result property="per_apply_ID" column="per_apply_ID" />
+        <result property="member_name" column="member_name" />
+        <result property="user_apply_category" column="user_apply_category" />
+        <result property="per_apply_region3" column="per_apply_region3" />
+	</resultMap>
+	
+	<resultMap id="perApply" type="perApplyVO">
+	    <result property="com_apply_image" column="com_apply_image" />
+        <result property="com_apply_ID" column="com_apply_ID" />        
+        <result property="member_name" column="member_name" />
+        <result property="com_apply_intro" column="com_apply_intro" />
+        <result property="com_apply_day" column="com_apply_day" />
+        <result property="com_apply_region2" column="com_apply_region2" />
+        <result property="com_apply_region3" column="com_apply_region3" />
+	</resultMap>
+	<!--
+	<resultMap id="memResult" type="java.util.HashMap">
+      <result property="id" column="id" />
+      <result property="pwd" column="pwd" />
+      <result property="name" column="name" />
+      <result property="email" column="email" />
+      <result property="joinDate" column="joinDate" />
+   </resultMap> -->
+	<select id="selectAllMemberList" resultMap="memResult">
+      <![CDATA[
+         select * from t_member	order by joinDate desc	 	
+      ]]>
+	</select>
+    
+  <insert id="insertMember"  parameterType="memberVO">
+		<![CDATA[
+		 insert into t_member(id,pwd, name, email)
+		 values(#{id}, #{pwd}, #{name}, #{email})
+		]]>      
+	</insert>
+	
+   
+   <update id="updateMember"  parameterType="memberVO">
+     <![CDATA[
+	     update t_member
+	     set pwd=#{pwd}, name=#{name}, email=#{email}
+	     where
+	     id=#{id}
+      ]]>      
+   </update> 
+     
+   <delete id="deleteMember"  parameterType="String">
+	<![CDATA[
+	   delete from  t_member
+	   where
+	   id=#{id}
+	]]>      
+  </delete>
+   <!-- 은빈 로그인 -->
+  <select id="loginById"  resultType="memberVO"   parameterType="memberVO" >
+   <![CDATA[
+          select member.member_id, member.member_password, member.member_name, member.member_email, member.member_profileImage, member.type, 
+            per_application.user_apply_category
+          from member left join per_application 
+          on member.member_id = per_application.member_id
+         where member.member_id=#{member_id} and member.member_password=#{member_password}
+   ]]>
+  </select>
+  
+  
+   <!--  은빈 찜 목록 -->
+  <select id= "member_jjim_Page" resultType="ComEunVO" parameterType="ComEunVO">
+  		<![CDATA[
+  		
+		SELECT member_profileImage, member_name,com_apply_intro,com_apply_region2,com_apply_region3
+		FROM jjim
+	]]>
+  </select>
+   <insert id="insert_add_jjim"  parameterType="ComEunVO">
+		<![CDATA[
+		 insert into jjim( member_profileImage, member_name, com_apply_intro, com_apply_region2, com_apply_region3) 
+		 values (#{member_profileImage}, #{member_name}, #{com_apply_intro}, #{com_apply_region2}, #{com_apply_region3})
+		]]>      
+	</insert>
+
+ <!-- 아람 -->
+ <select id="job_listPage"  resultType="job_listVO"   parameterType="job_listVO" >
+		<![CDATA[
+			select member.member_id, member.member_name, member.member_profileimage, com_application.member_id, 
+		    com_application.com_apply_ID,com_application.com_apply_category, com_application.com_apply_career,
+		    com_application.com_apply_gender, com_application.com_apply_age,com_application.com_apply_age2,
+		    com_application.com_apply_number, com_application.com_apply_day, com_application.com_apply_region1,
+		    com_application.com_apply_region2, com_application.com_apply_region3, com_application.com_apply_pay_day, 
+		    com_application.com_apply_deadline, com_application.com_apply_paper, com_application.com_apply_image,
+		    com_application.com_apply_intro, com_application.registration_date,com_application.com_apply_license_name
+			from member, com_application
+			where member.member_id = com_application.member_id
+			order by com_application.registration_date desc
+						
+		]]>
+  	</select>
+  
+ 	<select id="selectArticle" resultType="companyVO" parameterType="int">
+	  	<![CDATA[
+			select * 
+			from member natural join com_application	
+			where com_apply_ID=#{com_apply_ID}
+		]]>
+	</select>
+	<select id="selectPerApplyID"  resultType="Integer"   parameterType="String" >
+		<![CDATA[
+			select per_apply_ID 
+			from per_application
+			where member_id = #{member_id}
+		]]>
+	</select>
+		
+	<select id="insertMatching"  parameterType="MatchingVO" >
+		<![CDATA[
+			insert into matching values (matchingseq.nextval, #{com_apply_id}, #{per_apply_id}, sysdate)
+		]]>
+	</select>
+ 
+	
+	<select id="selectComApplyID"  resultType="Integer"   parameterType="String" >
+		<![CDATA[
+			select com_apply_ID 
+			from com_application
+			where member_id = #{member_id}
+		]]>
+	</select>
+	
+	<select id="myMatching" resultType="myMatchingVO" parameterType="Integer">
+		<![CDATA[
+			select per_application.per_apply_ID, per_application.member_name, per_application.user_apply_category, per_application.per_apply_region3
+			from matching join per_application
+			on matching.per_apply_ID = per_application.per_apply_ID
+			where matching.com_apply_ID = #{com_apply_ID}
+			order by matching_id desc
+		]]>
+	</select>
+	
+	<resultMap id="perApplication" type="myMatchingVO">
+        <result property="per_apply_ID" column="per_apply_ID" />
+        <result property="member_id" column="member_id" />
+        <result property="per_apply_age" column="per_apply_age" />
+        <result property="per_apply_region1" column="per_apply_region1" />
+        <result property="per_apply_region2" column="per_apply_region2" />
+        <result property="per_apply_region3" column="per_apply_region3" />
+        <result property="per_apply_day" column="per_apply_day" />
+        <result property="user_apply_gender" column="user_apply_gender" />
+        <result property="user_apply_category" column="user_apply_category" />
+        <result property="license_name" column="license_name" />
+        <result property="per_own_category" column="per_own_category" />
+        <result property="per_pwn_career" column="per_pwn_career" />
+        <result property="per_apply_image" column="per_apply_image" />
+        <result property="per_apply_intro" column="per_apply_intro" />
+        <result property="member_name" column="member_name" />
+        <result property="member_email" column="member_email" />
+	</resultMap>
+	
+	<select id="perApplication" resultType="perApplicationVO" parameterType="int">
+	  	<![CDATA[
+			select * 
+			from per_application	
+			where per_apply_ID=#{per_apply_ID}
+		]]>
+	</select>
+   
+  <select id="perApply" resultType="perApplyVO" parameterType="Integer">
+		<![CDATA[
+			select com_application.com_apply_image, com_application.com_apply_ID, com_application.member_name, 
+				com_application.com_apply_intro, com_application.com_apply_day, com_application.com_apply_region2, com_application.com_apply_region3
+			from matching join com_application
+			on matching.com_apply_ID = com_application.com_apply_ID
+			where matching.per_apply_ID = #{per_apply_ID}
+		]]>
+	</select>
+  
+  
+  
+
+  
+ 
+  
+  <!--  준관 6개 추가 -->
+	<resultMap id="replyResult" type="replyVO">
+		<result property="review_num" column="review_num" />
+		<result property="member_id" column="member_id" />
+		<result property="rew_gubun" column="rew_gubun" />
+		<result property="rew_rating" column="rew_rating" />
+		<result property="rew_content" column="rew_content" />
+		<result property="rew_date" column="rew_date" />
+		<result property="name" column="name" />
+	</resultMap>
+	
+  	<insert id="insert_com_reply"  parameterType="replyVO">
+		<![CDATA[
+		 insert into review values (review_num_seq.nextval, 'delitribe03', '1', '5', #{rew_content}, sysdate) 
+		]]>      
+	</insert>
+	
+	<select id="member_review" resultMap="replyResult">
+      <![CDATA[
+       	select * from review where rew_gubun = '2'
+      ]]>
+	</select>
+	
+	<select id="company_review" resultMap="replyResult">
+      <![CDATA[
+       	select r.review_num, r.member_id, r.rew_gubun, r.rew_date, r.rew_rating, r.rew_content, r.rew_date, m.member_name || '(' || r.member_id || ')' as name, to_char(r.rew_date, 'mm') as month
+		from member m, review r
+		where m.member_id = r.member_id
+		and r.member_id = 'delitribe03'
+		and r.rew_date between sysdate-#{day} and sysdate
+		order by r.rew_date desc
+      ]]>
+	</select>
+	
+	<update id="updateReply" parameterType="replyVO">
+		update review set rew_content = #{rew_content}, rew_date = sysdate
+	 	where review_num = #{review_num}
+	</update>
+	
+	<delete id="delete" parameterType="int">
+	 	delete from review
+	 	where review_num = #{review_num}
+	</delete>
+  
+  <!-- 소윤 -->
+  	<resultMap id="job_listSudoResult" type="job_listSudoVO">
+		<result property="com_apply_ID" column="com_apply_ID" />
+        <result property="member_id" column="member_id" />
+        <result property="com_apply_category" column="com_apply_category" />
+        <result property="com_apply_career" column="com_apply_career" />
+        <result property="com_apply_gender" column="com_apply_gender" />
+        <result property="com_apply_age" column="com_apply_age" />
+        <result property="com_apply_age2" column="com_apply_age2" />
+        <result property="com_apply_number" column="com_apply_number" />
+        <result property="com_apply_day" column="com_apply_day" />
+        <result property="com_apply_region1" column="com_apply_region1" />
+        <result property="com_apply_region2" column="com_apply_region2" />
+        <result property="com_apply_region3" column="com_apply_region3" />
+        <result property="com_apply_pay_day" column="com_apply_pay_day" />
+        <result property="com_apply_deadline" column="com_apply_deadline" />
+        <result property="com_apply_paper" column="com_apply_paper" />
+        <result property="com_apply_image" column="com_apply_image" />
+        <result property="com_apply_license_name" column="com_apply_license_name" />
+        <result property="com_apply_intro" column="com_apply_intro" />
+        <result property="com_apply_category" column="com_apply_category" />
+        <result property="registration_date" column="registration_date" />
+        <result property="member_name" column="member_name" />
+        <result property="member_profileImage" column="member_profileImage" />   
+                
+	</resultMap> 
+	
+
+	<select id="job_listSudoPage"  resultType="job_listSudoVO"   parameterType="job_listSudoVO" >
+	<![CDATA[
+	select member.member_id,member.member_name,member.member_profileimage,
+	com_application.member_id, com_application.com_apply_intro,com_application.registration_date,
+	com_application.com_apply_category, com_application.com_apply_region1
+	from member , com_application 
+	where member.member_id = com_application.member_id and 
+    com_application.com_apply_region1='수도권'
+	order by com_application.registration_date desc
+	]]>
+  </select>
+  
+  	<!-- 게시물 목록+페이징 (게시물을 10개씩 출력하는 쿼리) -->
+	<select id="listSudoPage" parameterType="hashMap" resultType="job_listSudoVO">
+	<![CDATA[
+	 	select *
+			from ( 
+		    	select rownum rn, a.*
+		    	from (
+			        select member.member_id,member.member_name,member.member_profileimage,
+	                com_application.com_apply_intro,com_application.registration_date,
+	                com_application.com_apply_category, com_application.com_apply_region1,com_application.com_apply_day
+	                from member , com_application
+	                where member.member_id = com_application.member_id and 
+	                com_application.com_apply_region1='수도권'
+	                order by com_application.registration_date desc
+		   			 ) a
+				)
+				where rn between #{startPost} and #{endPost}
+      ]]>
+	</select>
+  
+  
+  	<!-- 소윤 페이징 -->
+  	<!-- 게시물 총 갯수 -->
+  	<select id="listcount" resultType="int">
+  	<![CDATA[
+  		select count(*)
+        from member , com_application 
+        where member.member_id = com_application.member_id and
+                        com_apply_category in ('delivery_agent','night_delivery','early_delivery','quick_service','up_down')
+        order by com_application.registration_date desc      
+      ]]>
+  	</select>
+  	
+  	<!-- 게시물 목록+페이징 (게시물을 10개씩 출력하는 쿼리) -->
+	<select id="listPage" parameterType="hashMap" resultType="job_listVO">
+	<![CDATA[
+	 	select *
+		from ( 
+		    select rownum rn, a.*
+		    from (
+		        select member.member_id,member.member_name,member.member_profileimage,
+		                                com_application.com_apply_intro,com_application.registration_date,com_application.com_apply_ID,com_application.com_apply_day
+		        from member , com_application 
+		        where member.member_id = com_application.member_id and
+		                                com_apply_category in ('delivery_agent','night_delivery','early_delivery','quick_service','up_down')
+		        order by com_application.registration_date desc
+		    ) a
+		)
+		where rn between #{startPost} and #{endPost}
+      ]]>
+	</select>
+  
+  <resultMap id="member_commentResult" type="SearchVO">
+      <result property="com_apply_category"
+         column="com_apply_category" />
+      <result property="com_comment" column="com_comment" />
+   </resultMap>
+   
+   
+  <!-- 유정 검색 mappers -->
+   <!-- 덕연오빠가 map으로 바꾸고 sql문 바꿈 -->
+   <select id="comment_list" resultType="map">
+   <![CDATA[
+      select m.member_id, m.member_name, m.member_profileimage, ca.com_apply_id,
+      ca.member_id, ca.com_apply_intro, ca.registration_date,
+      ca.com_apply_category, ca.com_apply_region1, cac.com_comment,
+      ca.com_apply_day, to_char(ca.com_apply_deadline, 'yyyy-mm-dd') ymdDate
+      from com_application ca , com_application_cate cac, member m
+      where ca.com_apply_category = cac.com_apply_category 
+      and m.member_id = ca.member_id
+      and cac.com_comment like '%' || #{searchPage} || '%'
+      order by ca.com_apply_deadline desc
+    ]]>
+   </select>
+  
+  <!--  은빈 추가 -->
+  <select id="main"  resultType="memberVO"   parameterType="memberVO" >
+  
+      select com_application.com_apply_image, member.member_name,com_application.com_apply_intro,user_apply_category, com_apply_category, com_application.com_apply_ID
+      from member  left join com_application 
+      using(member_id) left join per_application using(member_id)
+		   <choose>
+		      <when test= "user_apply_category !=null  and user_apply_category !='' ">
+		         where com_apply_category  like '%' || #{user_apply_category} || '%'and com_apply_category is not null
+		      </when>
+		
+		      <otherwise> 
+		        where com_apply_category  not like '%' || 'delivery' || '%' and com_apply_category  not like '%' || 'quick' || '%'and com_apply_category  not like '%' || 'clean' || '%'and com_apply_category is not null
+		      </otherwise> 
+		   </choose> 
+  </select>
+  
+  <!-- 대겸 회원가입 수정부분   -->
+  	<resultMap id="per_apply" type="per_applyVO">
+  		<result property="per_apply_id" column="per_apply_id" />
+        <result property="member_id" column="member_id" />
+        <result property="per_apply_age" column="per_apply_age" />
+        <result property="per_apply_region1" column="per_apply_region1" />
+        <result property="per_apply_region2" column="per_apply_region2" />
+        <result property="per_apply_region3" column="per_apply_region3" />
+        <result property="per_apply_day" column="per_apply_day" />
+        <result property="user_apply_category" column="user_apply_category" />
+        <result property="license_name" column="license_name" />
+        <result property="per_own_category" column="per_own_category" />
+        <result property="per_own_career" column="per_own_career" />
+        <result property="per_apply_image" column="per_apply_image" />
+        <result property="per_apply_intro" column="per_apply_intro" />
+        <result property="member_name" column="member_name" />
+        <result property="member_email" column="member_email" />
+       
+                
+	</resultMap>
+  
+   <insert id="insertPerMember"  parameterType="memberVO">
+		<![CDATA[
+		 insert into member(member_id,member_password,member_name, member_email, member_phone )
+		 values(#{member_id}, #{member_password}, #{member_name}, #{member_email}, #{member_phone, jdbcType=VARCHAR})
+		]]>      
+	</insert>
+  
+  <insert id="insertPerApply" parameterType="per_applyVO">
+  <![CDATA[
+		 insert into per_application(per_apply_id, member_id,per_apply_age, per_apply_region1, per_apply_region2, per_apply_region3, per_apply_day, user_apply_category, 
+		 license_name, per_own_category, per_own_career,per_apply_image, per_apply_intro, member_name, member_email)
+		 values(per_number.nextVAL, #{member_id}, #{per_apply_age, jdbcType=INTEGER}, #{per_apply_region1}, #{per_apply_region2}, #{per_apply_region3}, #{per_apply_day}, #{user_apply_category}, 
+		 #{license_name, jdbcType=VARCHAR}, #{per_own_category, jdbcType=VARCHAR}, #{per_own_career, jdbcType=INTEGER}, #{per_apply_image, jdbcType=VARCHAR}, #{per_apply_intro, jdbcType=VARCHAR}, #{member_name}, #{member_email})
+		]]>   
+  </insert>
+  
+  	<!-- 대겸 회원가입-아이디 중복체크  -->
+  		<!--  아이디 중복 체크 --> 
+		<select id="idChk" resultType="int" parameterType="memberVO">
+			<![CDATA[
+		 select count(*) from member
+		 where member_id = #{member_id}
+			]]> 
+		</select>
+  
+   <!-- 대겸 회원가입 수정부분 끝    -->
+  
+  	<!-- 퀵서비스 매퍼 -->
+     <select id="job_listquickPage"  resultType="job_listVO"   parameterType="job_listVO" >
+      <![CDATA[
+         
+         select member.member_id,member.member_name,member.member_profileimage,
+         com_application.member_id, com_application.com_apply_intro,com_application.registration_date,
+         com_application.com_apply_category, com_application.com_apply_region1, com_application.com_apply_day
+         from member , com_application 
+         where member.member_id = com_application.member_id and 
+          com_application.com_apply_category='quick_service'
+         order by com_application.registration_date desc         
+      ]]>
+     </select>
+  
+  
+  
+</mapper>

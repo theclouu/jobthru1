@@ -1,0 +1,100 @@
+header {
+    width: 100%;
+}
+section {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    clear: both;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+ul {
+    padding: 0px;
+}
+li {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/***공통영역***/
+.container {
+    width: 80%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.align-items-center {
+    align-items: center;
+}
+.list-row {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.list-column {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+/***header***/
+.nav-item {
+    color: #495057;
+    padding-left: 3px;
+}
+.main-logo {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.logo-img {
+    width: 30%;
+    padding:0 0 0 0;
+}
+.head-tab {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+.join-tab {
+    width: 100%;
+    text-align: right;
+}
+.join-button {
+    color: gray;
+}
+
+/*** 컨텐츠/section ***/
+/*** width,display는 만지지 말기***/
+/*** height랑 background-color는 임의로 넣은거라 지우고 쓰시면 됩니당***/
+.main_content {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    
+}  
+.main_content .euns{
+    width: 100%;
+}
+
+/***footer***/
+.footer_wrap {
+    width: 100%;
+}
+.footer_section {
+    width: 10%;
+}
+.footer_img {
+    width: 100%;
+}
+
+

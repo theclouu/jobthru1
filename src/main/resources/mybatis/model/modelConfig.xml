@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration 	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+<settings> 
+	    <setting name="cacheEnabled" value="false" />
+	    <setting name="jdbcTypeForNull" value="NULL" />
+	</settings>
+	<typeAliases>
+		<typeAlias type="com.mySpring.myapp.member.vo.MemberVO"  alias="memberVO" />
+		<typeAlias type="com.mySpring.myapp.board.vo.ArticleVO"  alias="articleVO" />
+		<typeAlias type="com.mySpring.myapp.board.vo.ImageVO"  alias="imageVO" />
+		<typeAlias type="com.mySpring.myapp.member.vo.ComEunVO"  alias="ComEunVO" />
+		<typeAlias type="com.mySpring.myapp.member.vo.CompanyVO"  alias="CompanyVO" />
+		<typeAlias type="com.mySpring.myapp.member.vo.job_listVO"  alias="job_listVO" />
+		<typeAlias type="com.mySpring.myapp.member.vo.MatchingVO"  alias="matchingVO" />
+		<typeAlias type="com.mySpring.myapp.member.vo.MyMatchingVO"  alias="myMatchingVO" />
+		<typeAlias type="com.mySpring.myapp.member.vo.PerApplicationVO"  alias="perApplicationVO" />
+		<typeAlias type="com.mySpring.myapp.member.vo.PerApplyVO"  alias="perApplyVO" />
+		
+		
+		<!-- 준관 1개 추가 -->
+		<typeAlias type="com.mySpring.myapp.member.vo.ReplyVO"  alias="ReplyVO" />
+		<!-- 소윤 -->
+		<typeAlias type="com.mySpring.myapp.member.vo.job_listSudoVO"  alias="job_listSudoVO" />
+		<!-- 유정 검색 모델콘피그 안 옮겨도 됨-->
+      <typeAlias type="com.mySpring.myapp.member.vo.SearchVO"  alias="SearchVO" />
+      
+      <!--   대겸 회원가입 VO 추가-->
+      	<typeAlias type="com.mySpring.myapp.member.vo.Per_applyVO"  alias="per_applyVO" />
+      	
+	</typeAliases>
+</configuration>

@@ -1,0 +1,471 @@
+header {
+    width: 100%;
+}
+section {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    clear: both;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+ul {
+    padding: 0px;
+}
+li {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/***공통영역***/
+.container {
+    width: 80%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.align-items-center {
+    align-items: center;
+}
+.list-row {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.list-column {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.list-column1 {
+    width: 40%;
+    padding: 0;
+}
+.list-column2 {
+    width: 60%;
+    padding: 5% 0 0 0;
+    text-align: left;
+}
+/***header***/
+.nav-item {
+    color: #495057;
+    padding-left: 3px;
+}
+.main-logo {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.logo-img {
+    width: 30%;
+    padding:0 0 0 0;
+}
+.head-tab {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+.join-tab {
+    width: 100%;
+    text-align: right;
+}
+.join-button {
+    color: gray;
+}
+
+/*** 컨텐츠/section ***/
+/*** width,display는 만지지 말기***/
+/*** height랑 background-color는 임의로 넣은거라 지우고 쓰시면 됩니당***/
+
+.main_content {
+    width: 60%;
+    display: inline-block;
+    height: 1100px;
+    margin:0 0 0 20%;
+    /* background-color: lightskyblue; */
+}
+
+/***footer***/
+.footer_wrap {
+    width: 100%;
+}
+.footer_section {
+    width: 10%;
+}
+.footer_img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** 여기서부터 아래로 새로 만든 css ***/
+
+.login_default_img1 {
+    width: 40%;
+    padding:5% 0 0 0;
+    margin:0;
+}
+.left_menu_center_item {
+    width: 80%;
+    padding:0;
+    margin: 10%;
+}
+.left_menu_center_item2 {
+    width: 80%;
+    padding:5% 0 5% 0;
+    margin: 10%;
+    background-color: rgba(230, 230, 230, 0.473);
+    border-radius: 20px;
+}
+.login_default_img2 {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    padding-top: 10px;
+}
+.login_id {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin: auto;
+}
+.left_menu_p1 {
+    text-align: center;
+    font-size: 0.8em;
+}
+.left_menu_p2 {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0 0 5% 0;
+}
+.chat_go_img {
+    display: block;
+    padding: 5% 0 10% 0;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_resume_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_proposal_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_application_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.smart_match_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_elec_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_review_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.go_mypage1_img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.main_content_subtitle2 {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding:0;
+    margin:0;
+}
+.aside_center_item2 {
+    width: 100%;
+    padding:0 0 1% 0;
+    margin: 0;
+    background-color: rgba(230, 230, 230, 0.473);
+    border-radius: 20px;
+}
+.information_subtitle1 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: blue;
+    margin: 40% 0 20% 0;
+}
+.information{
+    display: block;
+    width: 70%;
+    padding:7.5% 7.5% 3% 7.5%;
+    margin: 10% 7.5% 10% 7.5%;
+    background-color: white;
+    border-radius: 20px;
+}
+.information_img {
+    display: block;
+    width: 40%;
+    margin: 0px auto;
+}
+.aside_ul {
+    list-style: none;
+}
+.information_p1 {
+    text-align: center;
+    font-size: 0.8em;
+    padding:0;
+    margin:5%;
+}
+.information_p2 {
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(120, 120, 120, 0.473);
+    padding:0 0 10% 0;
+    margin:0;
+}
+.information_subtitle2 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin: 20% 0 20% 0;
+}
+.information_subtitle3 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: blue;
+    margin: 20% 0 10% 0;
+}
+.information_subtitle4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: blue;
+    margin: 10% 0 10% 0;
+    padding : 10% 0 0 0;
+}
+.rating_img {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+}
+.login_default_img3 {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.recruting_img {
+    display: block;
+    width: 40%;
+    padding:0 35% 0 0;
+    margin: 0px auto;
+}
+.main_content3_center_item1 {
+    width: 90%;
+    padding:0;
+    margin: 5% 0 0 0;
+}
+.main_content3_center_item2 {
+    width: 80%;
+    padding:0;
+    margin: 5%;
+    background-color: rgba(230, 230, 230, 0.473);
+    border-radius: 10px;
+}
+.main_content3_center_item3 {
+    width: 80%;
+    padding:0;
+    margin: 5%;
+}
+.main_content3_center_item4 {
+    width: 90%;
+    padding:0;
+    margin: 2% 3% 1% 3%;;
+}
+.main_content3_center_item5 {
+    width: 90%;
+    padding:0;
+    margin: 1% 3% 1% 3%;;
+}
+.main_content3_center_item6 {
+    width: 90%;
+    padding:1% 0 0 0;
+    margin: 1% 3% 1% 3%;
+    background-color: rgba(230, 230, 230, 0.473);
+    border-radius: 10px;
+}
+.main_content3_center_item7 {
+    width: 90%;
+    padding:1% 0 1% 0;
+    margin: 1% 3% 1% 3%;
+    background-color: rgba(150, 150, 150, 0.473);
+    border-radius: 10px;
+}
+.main_content3_center_item8 {
+    width: 90%;
+    padding:0;
+    margin: 2% 3% 1% 3%;
+    background-color: rgba(230, 230, 230, 0.473);
+    border-radius: 10px;
+}
+.main_content3_center_item9 {
+    width: 90%;
+    padding:0;
+    margin: 2% 3% 0 3%;
+}
+.main_content3_table1 {
+    width: 100%;
+}
+.main_content3_table1_td1 {
+    width: 10%;
+}
+.main_content3_table1_p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    margin:0 0 0 2.5%;
+}
+.main_content3_table1_tr3 {
+    text-align: center;
+}
+.main_content3_table1_tr3_td1 {
+    width: 18%;
+    height:25px;
+    padding:0;
+    border-right: 1px solid gray;
+}
+.main_content3_table1_tr3_td2 {
+    width:20%;
+    height:25px;
+    padding:0;
+    border-right: 1px solid gray;
+}
+.main_content3_table2 {
+    width: 100%;
+}
+.main_content3_table2_td1 {
+    width: 60%;
+    text-align: left;
+    padding: 0 0 0 15%;
+    font-weight: bold;
+}
+.rating_img2 {
+    width: 60%;
+}
+.main_content3_table2_td2 {
+    width: 35%;
+    padding: 0 5% 0 0;
+}
+.main_content3_table3 {
+    width:100%;
+    border: 1px solid rgba(120, 120, 120, 0.473);
+}
+.main_content3_table3_tr {
+    text-align: center;
+}
+.main_content3_table3_tr_td {
+    width:25%;
+    height:25px;
+    padding:0;
+    border-right: 1px solid rgba(120, 120, 120, 0.473);
+}
+.main_content3_table3_tr_td2 {
+    width:14.28571%;
+    height:25px;
+    padding:0;
+    border-right: 1px solid rgba(120, 120, 120, 0.473);
+}
+.main_content3_table4 {
+    width:100%;
+}
+.main_content3_table4_td1 {
+    width:10%;
+}
+.main_content3_table4_td2 {
+    padding:0 0 0 3%;
+}
+.main_content3_table5 {
+    width:35%;
+}
+.main_content3_table5_td1 {
+    text-align: left;
+    padding:0 0 0 5%;
+    width:5%;
+}
+.main_content3_table5_td2 {
+    width:25%;
+}
+.main_content3_review_p1 {
+    width: 80%;
+    font-size: 0.8em;
+    text-align: left;
+    padding: 0;
+    margin: 2% 2% 0 2%;
+}
+.main_content3_review_p2 {
+    width: 95%;
+    font-size: 0.8em;
+    text-align: left;
+    padding: 0;
+    margin: 2%;
+    background-color: rgba(230, 230, 230, 0.473);
+    border-radius: 10px;
+}
+.main_content3_table6 {
+    width:40%;
+    margin:0 0 0 60%;
+}
+.main_content3_table6_td1 {
+    font-size: 0.8em;
+    text-align: right;
+}
+.review_img {
+    width:100%;
+}
+.main_content3_table6_td2 {
+    width:20%;
+    padding:3% 0 0 0;
+}
+.main_content3_table7 {
+    width:30%;
+    margin:0 0 0 35%;
+}
+.main_content3_table7_td {
+    width:3%;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+}
+.hr {
+    margin:0 3% 0 0;
+}

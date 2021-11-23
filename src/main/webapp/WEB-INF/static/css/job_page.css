@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+}
+section {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    clear: both;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+ul {
+    padding: 0px;
+}
+li {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/***공통영역***/
+.container {
+    width: 80%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.align-items-center {
+    align-items: center;
+}
+.list-row {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.list-column {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+/***header***/
+.nav-item {
+    color: #495057;
+    padding-left: 3px;
+}
+.main-logo {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.logo-img {
+    width: 30%;
+    padding:0 0 0 0;
+}
+.head-tab {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+.join-tab {
+    width: 100%;
+    text-align: right;
+}
+.join-button {
+    color: gray;
+}
+
+/* .submenu{
+    text-align: center;
+    float: left;
+    line-height: 50px; 
+} */
+
+/*** 컨텐츠/section ***/
+/*** width,display는 만지지 말기***/
+/*** height랑 background-color는 임의로 넣은거라 지우고 쓰시면 됩니당***/
+.mainmenu {
+    width: 100%;
+}
+.main-cont {
+    /* w-80% */
+    width: 100%;
+    float: left;
+}
+.category_1st {
+    width: 16%;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.card-list {
+    list-style: none;
+}
+.card-body {
+    color: black; 
+    width: 30%;
+    display: inline-block;
+    float: left;
+    padding-left: 1%;
+}
+.card-img {
+    width: 100%;
+}
+.job_opening_main {
+    width: 100%;
+    clear: both;
+}
+.job_opening_detail {
+    width: 100%;
+}
+/* 패딩확인 */
+
+.recommend-1 {
+    padding: 40px;
+}
+/* 알바스토리 */
+.recommend-11 {
+    padding: 60px;
+    padding-bottom: 50px;
+}
+.board_list_body {
+    text-align: center;
+    margin-top: 5%;
+}
+.board_list_body .item {
+    padding: 80px;
+    width: 140px;
+}
+.item {
+    box-shadow: 4px 4px 4px lightgray;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* .left_layer {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    height: 100px;
+    background-color: lightskyblue;
+}
+.right_layer {
+    width: 50%;
+    display: inline-block;
+    height: 100px;
+    background-color: lemonchiffon;
+} */
+
+/***footer***/
+.footer_wrap {
+    width: 100%;
+}
+.footer_section {
+    width: 10%;
+}
+.footer_img {
+    width: 100%;
+}
+
+* {margin:0; padding: 0;}
+ul li {list-style: none ;}
+.clearfix::after{content: '';display: block; clear: both;}
+body {background: white; overflow-y: scroll; padding-top: 20%;}
+header {
+    margin-top: 20px;
+    background: linear-gradient(white 50px, white );
+    /* rgba(255,255,255,0.5) 50px, rgba(255,255,255,0.5) */
+    overflow: hidden;
+    transition: height 0.4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav {width: 960px; margin: 0 auto;}
+nav > ul > li {float: left; line-height: 50px; padding:0 70px; position: relative;}
+nav > ul > li ul{width: 100%; position: absolute;}
+nav > ul > li ul li{white-space: nowrap;}
